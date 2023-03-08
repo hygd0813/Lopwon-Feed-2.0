@@ -1,0 +1,195 @@
+.Lopwon_Feed {
+	margin: 2em auto;
+	padding: 0 1em;
+}
+
+.Lopwon_Feed-blog {
+	margin: 2em 0;
+	padding: 1em;
+	border-radius: 1.5em;
+	border: 1px solid #f2f2f2;
+	background-color: #f8f8f8;
+}
+
+.Lopwon_Feed-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.Lopwon_Feed-header a {
+	flex-shrink: 0;
+	width: 33.33333%;
+	text-decoration: none;
+	border: none;
+	border-radius: 3em;
+	background-color: #efefef;
+}
+
+.Lopwon_Feed-header a:hover {
+	background-color: #dedede;
+}
+
+.Lopwon_Feed-title h2 {
+	margin: 1em;
+	color: #53B8BB;
+	font-weight: normal;
+	text-align: center;
+	line-height: 1.2;
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	line-clamp: 1;
+}
+
+.Lopwon_Feed-header:hover .Lopwon_Feed-title h2 {
+	color: black;
+}
+
+.Lopwon_Feed-header .mark {
+	background-color: #53B8BB;
+}
+
+.Lopwon_Feed-title .color {
+	color: white;
+}
+
+.Lopwon_Feed-header:hover .Lopwon_Feed-title .color {
+	color: black;
+}
+
+.Lopwon_Feed-description {
+	margin-left: 1em;
+	flex-shrink: 0;
+	width: 50%;
+	color: rgba(0 0 0 / 30%);
+	text-align: right;
+	word-wrap: break-word;
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+}
+
+.Lopwon_Feed-header:hover .Lopwon_Feed-description {
+	color: rgba(0 0 0 / 70%);
+}
+
+.Lopwon_Feed-wrap {
+	margin-top: 2em;
+}
+
+.Lopwon_Feed-wrap ul {
+	margin: 0;
+	padding: 0;
+}
+
+.Lopwon_Feed-wrap a {
+	text-decoration: none;
+	border: none;
+}
+
+.Lopwon_Feed-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5em 0;
+	color: #53B8BB;
+	line-height: 1.2;
+	text-decoration: none;
+	border-radius: 1.5em;
+	border: none;
+}
+
+.Lopwon_Feed-item:hover {
+	background-color: #efefef;
+}
+
+.Lopwon_Feed-item span:first-child {
+	margin: 0 0.5em;
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	line-clamp: 1;
+}
+
+.Lopwon_Feed-wrap a:hover .Lopwon_Feed-item span:first-child {
+	color: black;
+}
+
+.Lopwon_Feed-item span:last-child {
+	margin: 0 0.5em;
+	flex-shrink: 0;
+	width: 33.33333%;
+	text-align: right;
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	line-clamp: 1;
+	opacity: .3;
+}
+
+.Lopwon_Feed-wrap a:hover .Lopwon_Feed-item span:last-child {
+	opacity: 1;
+}
+
+.Lopwon_Feed-oops {
+	color: chocolate;
+}
+
+.Lopwon_Feed-oops span {
+	color: gray;
+}
+
+@media screen and (max-width: 480px) {
+	
+	.Lopwon_Feed {
+		padding: 0 0.5em;
+	}
+
+	.Lopwon_Feed-blog {
+		margin: 1em 0;
+		padding: 0.5em;
+	}
+
+	.Lopwon_Feed-header a {
+		width: calc(50% - 1em);
+	}
+
+	.Lopwon_Feed-title h2 {
+		margin: 0.7em 0.5em;
+	}
+
+	.Lopwon_Feed-wrap {
+		margin-top: 1em;
+	}	
+
+	.Lopwon_Feed-item span:first-child {
+		margin: 0 0.25em;
+	}
+
+	.Lopwon_Feed-item span:last-child {
+		margin: 0 0.25em;
+	}	
+
+}
+
+@media screen and (max-width: 400px) {
+	
+	.Lopwon_Feed-item span:last-child {
+		width: 28%;
+	}
+	
+}
